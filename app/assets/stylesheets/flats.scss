@@ -1,9 +1,13 @@
 // Place all the styles related to the flats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.flats{
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
+.flats{
+  margin: 15px 30px;
+}
 .card {
   height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
@@ -11,34 +15,20 @@
   background-position: center;
   color: white;
   position: relative;
-  margin: 15px;
-}
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
+  margin: 15px 0px;
 }
 .card-description {
   position: absolute;
   bottom: 10px;
   left: 10px;
+  right: 10px;
 }
 .card-description h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 .card-description p {
-  font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
+  font-size: 16px;
+  opacity: 0.9;
 }
 .card-link {
   position: absolute;
@@ -52,4 +42,30 @@
 }
 .card-link:hover {
   opacity: 0.1;
+}
+
+.btn {
+  border-radius: 2px;
+}
+.banner {
+  color: white;
+  text-align: center;
+  height: 90vh;
+  margin: 5vh 0;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
 }

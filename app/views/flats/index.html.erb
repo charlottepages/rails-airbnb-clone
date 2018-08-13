@@ -1,0 +1,19 @@
+<h1 class="text-center">Feel at home, anywhere</h1>
+
+
+<div class="flats">
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="flat card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= flat['imageUrl'] %>');">
+          <div class="card-description">
+            <h2><%= flat['name'] %></h2>
+            <p><%= flat['price'] %> €</p>
+          </div>
+          <%= link_to '', flat_path(flat['id']), class: 'card-link' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
